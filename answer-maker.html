@@ -56,13 +56,18 @@
             <input type="button" onclick="copy()" class="btn btn-success but p-3 mb-4" id="copy" value="Copy answers">
         </div>
     </div>
-    <div class="position-absolute bottom-0 start-0 m-1">
-        <p>Made by<a href="https://t.me/arya_sianati" target="_blank" class="ml-3">arya</a></p>
+    <div class="mt-3 ml-3">
+        <a href="" target="_blank">Source code</a>
     </div>
 </body>
 <script>
     list = {}
+    function copy_button(){
+        document.getElementById("copy").value = "Copy answers";
+        document.getElementById("copy").className = "btn btn-success but p-3 mb-4";
+    }
     function add(){
+        copy_button()
         var abc = document.getElementsByTagName("input")
         for (i of abc){
             if (i.checked === true){
@@ -95,15 +100,15 @@
             "                        </div>\n" +
             "                        <div class=\"col-10 p-2 \">\n" +
             "                            <div class=\"col\">\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a1 +"\" id=\"s"+ a1 +"g1\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a1 +"\" id=\"s"+ a1 +"g1\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a1 +"g1\">1</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a1 +"\" id=\"s"+ a1 +"g2\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a1 +"\" id=\"s"+ a1 +"g2\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a1 +"g2\">2</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a1 +"\" id=\"s"+ a1 +"g3\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a1 +"\" id=\"s"+ a1 +"g3\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a1 +"g3\">3</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a1 +"\" id=\"s"+ a1 +"g4\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a1 +"\" id=\"s"+ a1 +"g4\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a1 +"g4\">4</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a1 +"\" id=\"s"+ a1 +"g5\" checked autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a1 +"\" id=\"s"+ a1 +"g5\" checked autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-danger\" for=\"s"+ a1 +"g5\">X</label>\n" +
             "                            </div>\n" +
             "                        </div>\n" +
@@ -116,15 +121,15 @@
             "                        </div>\n" +
             "                        <div class=\"col-10 p-2 \">\n" +
             "                            <div class=\"col\">\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a2 +"\" id=\"s"+ a2 +"g1\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a2 +"\" id=\"s"+ a2 +"g1\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a2 +"g1\">1</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a2 +"\" id=\"s"+ a2 +"g2\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a2 +"\" id=\"s"+ a2 +"g2\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a2 +"g2\">2</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a2 +"\" id=\"s"+ a2 +"g3\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a2 +"\" id=\"s"+ a2 +"g3\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a2 +"g3\">3</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a2 +"\" id=\"s"+ a2 +"g4\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a2 +"\" id=\"s"+ a2 +"g4\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a2 +"g4\">4</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a2 +"\" id=\"s"+ a2 +"g5\" checked autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a2 +"\" id=\"s"+ a2 +"g5\" checked autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-danger\" for=\"s"+ a2 +"g5\">X</label>\n" +
             "                            </div>\n" +
             "                        </div>\n" +
@@ -137,15 +142,15 @@
             "                        </div>\n" +
             "                        <div class=\"col-10 p-2 \">\n" +
             "                            <div class=\"col\">\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a3 +"\" id=\"s"+ a3 +"g1\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a3 +"\" id=\"s"+ a3 +"g1\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a3 +"g1\">1</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a3 +"\" id=\"s"+ a3 +"g2\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a3 +"\" id=\"s"+ a3 +"g2\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a3 +"g2\">2</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a3 +"\" id=\"s"+ a3 +"g3\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a3 +"\" id=\"s"+ a3 +"g3\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a3 +"g3\">3</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a3 +"\" id=\"s"+ a3 +"g4\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a3 +"\" id=\"s"+ a3 +"g4\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a3 +"g4\">4</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a3 +"\" id=\"s"+ a3 +"g5\" checked autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a3 +"\" id=\"s"+ a3 +"g5\" checked autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-danger\" for=\"s"+ a3 +"g5\">X</label>\n" +
             "                            </div>\n" +
             "                        </div>\n" +
@@ -158,15 +163,15 @@
             "                        </div>\n" +
             "                        <div class=\"col-10 p-2 \">\n" +
             "                            <div class=\"col\">\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a4 +"\" id=\"s"+ a4 +"g1\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a4 +"\" id=\"s"+ a4 +"g1\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a4 +"g1\">1</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a4 +"\" id=\"s"+ a4 +"g2\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a4 +"\" id=\"s"+ a4 +"g2\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a4 +"g2\">2</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a4 +"\" id=\"s"+ a4 +"g3\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a4 +"\" id=\"s"+ a4 +"g3\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a4 +"g3\">3</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a4 +"\" id=\"s"+ a4 +"g4\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a4 +"\" id=\"s"+ a4 +"g4\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a4 +"g4\">4</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a4 +"\" id=\"s"+ a4 +"g5\" checked autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a4 +"\" id=\"s"+ a4 +"g5\" checked autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-danger\" for=\"s"+ a4 +"g5\">X</label>\n" +
             "                            </div>\n" +
             "                        </div>\n" +
@@ -179,15 +184,15 @@
             "                        </div>\n" +
             "                        <div class=\"col-10 p-2 \">\n" +
             "                            <div class=\"col\">\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a5 +"\" id=\"s"+ a5 +"g1\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a5 +"\" id=\"s"+ a5 +"g1\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a5 +"g1\">1</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a5 +"\" id=\"s"+ a5 +"g2\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a5 +"\" id=\"s"+ a5 +"g2\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a5 +"g2\">2</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a5 +"\" id=\"s"+ a5 +"g3\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a5 +"\" id=\"s"+ a5 +"g3\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a5 +"g3\">3</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a5 +"\" id=\"s"+ a5 +"g4\" autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a5 +"\" id=\"s"+ a5 +"g4\" autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-success\" for=\"s"+ a5 +"g4\">4</label>\n" +
-            "                                <input type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a5 +"\" id=\"s"+ a5 +"g5\" checked autocomplete=\"off\">\n" +
+            "                                <input onchange='copy_button()' type=\"radio\" class=\"btn-check gozineh\" name=\"s"+ a5 +"\" id=\"s"+ a5 +"g5\" checked autocomplete=\"off\">\n" +
             "                                <label class=\"btn btn-outline-danger\" for=\"s"+ a5 +"g5\">X</label>\n" +
             "                            </div>\n" +
             "                        </div>\n" +
@@ -204,11 +209,13 @@
         }
     }
     function copy() {
+        document.getElementById("copy").value = "Copeid !";
+        document.getElementById("copy").className = "btn btn-danger but p-3 mb-4";
         var abc = document.getElementsByTagName("input")
         for (i of abc){
             if (i.checked === true){
                 myArray = i.id.split("s")[1].split("g")
-                if(myArray[1]==5){
+                if(myArray[1] === 5){
                     list[myArray[0]] = ""
                 }
                 else {
@@ -221,7 +228,6 @@
             copytext += String(i) + " - " + list[i] + "\n"
         }
         navigator.clipboard.writeText(copytext);
-        alert("Copied !");
     }
 </script>
 </html>
